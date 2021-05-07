@@ -10,18 +10,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost/php_simple/pages/articles/articles.php">Articles</a>
+                        <a class="nav-link" href="http://localhost/pages/articles/articles.php">Articles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost/php_simple/pages/articles/article_form.php">Créer</a>
+                        <a class="nav-link" href="http://localhost/pages/articles/article_form.php">Créer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost/php_simple/pages/users/users.php">Utilisateurs</a>
+                        <a class="nav-link" href="http://localhost/pages/users/users.php">Utilisateurs</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                     <?php
-                        require($_SERVER['DOCUMENT_ROOT'] . '/php_simple/components/users/' . (isset($user) ? 'user_actions' : 'login') . '.php');
+                        require($_SERVER['DOCUMENT_ROOT'] . '/components/users/' . (isset($user) ? 'user_actions' : 'login') . '.php');
                     ?>
                 </ul>
             </div>
